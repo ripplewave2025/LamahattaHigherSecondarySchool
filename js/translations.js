@@ -7,29 +7,29 @@ export const translations = {
     },
     nav: {
       title: "Lamahatta High School",
-      subtitle: "Higher Secondary • Estd. 1964",
+      subtitle: "Higher Secondary | Estd. 1964",
       home: "Home",
-      story: "Campus Story",
+      story: "Our Campus",
       life: "Student Life",
-      gallery: "Memory Wall",
+      gallery: "Gallery",
       cta: "Write to School"
     },
     hero: {
       chip1: "Since 1964",
       chip2: "In the Hills",
-      chip3: "Future Ready",
-      title: "A school shaped by mist, mountains, and momentum.",
-      desc: "Lamahatta High School carries the rhythm of the hills into classrooms, culture, sports, and everyday learning.",
-      btn1: "Explore the Memory Wall",
-      btn2: "See Campus Rhythm",
-      note: "A cinematic first impression, built from the real campus, real students, and real school life.",
-      panelLabel1: "Campus Mood",
-      panelValue1: "Quiet hills, loud ambition",
-      panelLabel2: "Student Life",
-      panelValue2: "Sports, culture, assembly, community",
-      panelLabel3: "Viewpoint",
-      panelValue3: "Darjeeling light, Lamahatta character",
-      scroll: "Scroll for the story"
+      chip3: "Learning Together",
+      title: "A school shaped by the hills, the students, and a shared sense of purpose.",
+      desc: "Lamahatta High School brings together study, culture, sports, and community in a place where students learn with confidence and care.",
+      btn1: "Explore the Gallery",
+      btn2: "See Student Life",
+      note: "A glimpse of Lamahatta High School through its campus, students, and everyday life.",
+      panelLabel1: "Campus Spirit",
+      panelValue1: "Discipline, warmth, and belonging",
+      panelLabel2: "School Life",
+      panelValue2: "Learning, culture, sports, and service",
+      panelLabel3: "Setting",
+      panelValue3: "In the hills of Lamahatta",
+      scroll: "Discover more"
     },
     stats: {
       established: "Established",
@@ -38,47 +38,47 @@ export const translations = {
       stream: "Senior Stream"
     },
     story: {
-      eyebrow: "Campus Story",
-      title: "The site should feel like the school, not like a template.",
-      lead: "This direction uses the strongest parts of Lamahatta itself: mountain light, assembly rhythm, culture, campus ground, and the feeling of growing up in a place with character.",
-      step1Title: "Arrival",
-      step1Body: "The first screen should feel cinematic and grounded, with atmosphere before information.",
-      step2Title: "Rhythm",
-      step2Body: "Assembly, classroom life, performance, sports, and community work should feel like one living system.",
-      step3Title: "Memory",
-      step3Body: "Photos should feel curated and meaningful, with captions and composition instead of a generic gallery dump.",
-      quote: "Rooted in the hills. Moving with purpose.",
-      quoteMeta: "The visual direction for the first pass"
+      eyebrow: "Our Campus",
+      title: "Where learning, culture, and community come together.",
+      lead: "Set in the hills of Lamahatta, the school brings together discipline, creativity, participation, and a strong sense of belonging.",
+      step1Title: "A Place to Begin",
+      step1Body: "Each school day begins with shared purpose, a welcoming campus, and a community that brings students together.",
+      step2Title: "Learning and Participation",
+      step2Body: "Classrooms, assemblies, performances, sports, and service activities help students grow with confidence and responsibility.",
+      step3Title: "Memories That Last",
+      step3Body: "From school programs to daily moments on the ground, these memories reflect the spirit of Lamahatta High School.",
+      quote: "Rooted in the hills. Growing with purpose.",
+      quoteMeta: "Lamahatta High School"
     },
     spotlight: {
       eyebrow: "Student Life",
-      title: "A more curated rhythm for campus life.",
-      lead: "Instead of blocks of generic content, the homepage now frames the school through moments that feel lived in.",
-      item1Title: "Assembly & Presence",
-      item1Body: "Opening moments, hall gatherings, and ceremonies establish identity before detail.",
-      item2Title: "Performance & Culture",
-      item2Body: "Stage and cultural dress bring shape, warmth, and visual contrast to the experience.",
-      item3Title: "Sport & Motion",
-      item3Body: "Football, volleyball, long jump, and sports-day energy add movement and future-facing confidence.",
-      ctaTitle: "Memory wall next",
-      ctaBody: "The gallery becomes a curated wall of campus moments, with filters, captions, and a better lightbox.",
+      title: "A fuller picture of school life.",
+      lead: "From assemblies and cultural programs to sports and community work, student life at Lamahatta High School is active, disciplined, and connected.",
+      item1Title: "Assembly and Presence",
+      item1Body: "Assemblies and school gatherings bring students together with shared purpose and discipline.",
+      item2Title: "Performance and Culture",
+      item2Body: "Cultural programs and performances give students space to express talent, confidence, and tradition.",
+      item3Title: "Sports and Teamwork",
+      item3Body: "Sports and outdoor activities build energy, teamwork, and confidence throughout the school year.",
+      ctaTitle: "Explore the gallery",
+      ctaBody: "Browse more moments from campus life, school programs, sports, and community activities.",
       ctaButton: "Open the gallery"
     },
     memory: {
-      eyebrow: "Memory Wall Preview",
-      title: "Real images, better composition, more atmosphere.",
-      lead: "The homepage preview now points toward a richer gallery instead of using a flat strip of hover tiles."
+      eyebrow: "Gallery Preview",
+      title: "Moments from campus life.",
+      lead: "A preview of the scenes, programs, and everyday moments that shape the school community."
     },
     footer: {
       heading: "Lamahatta High School",
-      copy: "A calmer, stronger digital presence for the school, built around place, student life, and visual memory.",
+      copy: "A school community rooted in learning, culture, discipline, and shared progress.",
       links: "Navigate",
       contact: "Contact"
     },
     galleryPage: {
-      eyebrow: "Memory Wall",
-      title: "Campus life, culture, sports, and everyday atmosphere.",
-      lead: "A curated collection built from renamed school photos and grouped into moments that feel easier to explore."
+      eyebrow: "Gallery",
+      title: "Campus life, culture, sports, and everyday moments.",
+      lead: "Browse photographs from school life, programs, sports, and community activities at Lamahatta High School."
     }
   },
   ne: {
@@ -89,29 +89,29 @@ export const translations = {
     },
     nav: {
       title: "लामाहट्टा हाई स्कूल",
-      subtitle: "उच्च माध्यमिक • स्था. १९६४",
+      subtitle: "उच्च माध्यमिक | स्था. १९६४",
       home: "गृहपृष्ठ",
-      story: "विद्यालयको कथा",
+      story: "हाम्रो विद्यालय",
       life: "विद्यार्थी जीवन",
-      gallery: "स्मृति भित्तो",
+      gallery: "ग्यालरी",
       cta: "सम्पर्क गर्नुहोस्"
     },
     hero: {
       chip1: "१९६४ देखि",
-      chip2: "पहाडभित्र",
-      chip3: "भविष्यतर्फ",
-      title: "कुहिरो, पहाड र गतिले बनेको विद्यालय।",
-      desc: "लामाहट्टा हाई स्कूलले कक्षा, संस्कृति, खेलकुद र दैनिक सिकाइमा पहाडको लय बोकेको छ।",
-      btn1: "स्मृति भित्तो हेर्नुहोस्",
-      btn2: "क्याम्पसको लय हेर्नुहोस्",
-      note: "वास्तविक क्याम्पस, वास्तविक विद्यार्थी र वास्तविक विद्यालय जीवनबाट बनेको पहिलो प्रभाव।",
-      panelLabel1: "क्याम्पसको मूड",
-      panelValue1: "शान्त पहाड, ठूलो चाहना",
-      panelLabel2: "विद्यार्थी जीवन",
-      panelValue2: "खेल, संस्कृति, सभा, समुदाय",
-      panelLabel3: "दृश्य",
-      panelValue3: "दार्जिलिङको उज्यालो, लामाहट्टाको स्वभाव",
-      scroll: "कथातर्फ तल जानुहोस्"
+      chip2: "पहाडमा",
+      chip3: "साथमा सिकाइ",
+      title: "पहाड, विद्यार्थी र साझा उद्देश्यले बनेको विद्यालय।",
+      desc: "लामाहट्टा हाई स्कूलले पढाइ, संस्कृति, खेलकुद र समुदायलाई एकै ठाउँमा जोडेर विद्यार्थीलाई आत्मविश्वासका साथ अगाडि बढ्न मद्दत गर्छ।",
+      btn1: "ग्यालरी हेर्नुहोस्",
+      btn2: "विद्यार्थी जीवन हेर्नुहोस्",
+      note: "क्याम्पस, विद्यार्थी र विद्यालयको दैनिक जीवनमार्फत लामाहट्टा हाई स्कूलको झलक।",
+      panelLabel1: "क्याम्पसको भावना",
+      panelValue1: "अनुशासन, अपनापन र आत्मीयता",
+      panelLabel2: "विद्यालय जीवन",
+      panelValue2: "पढाइ, संस्कृति, खेलकुद र सेवा",
+      panelLabel3: "स्थान",
+      panelValue3: "लामाहट्टाका पहाडहरूबीच",
+      scroll: "थप हेर्नुहोस्"
     },
     stats: {
       established: "स्थापना",
@@ -120,47 +120,47 @@ export const translations = {
       stream: "उच्च कक्षा"
     },
     story: {
-      eyebrow: "विद्यालयको कथा",
-      title: "यो वेबसाइट टेम्प्लेटजस्तो होइन, विद्यालयजस्तो महसुस हुनुपर्छ।",
-      lead: "यो दिशाले लामाहट्टाकै विशेष पक्षलाई प्रयोग गर्छ: पहाडको उज्यालो, सभा, संस्कृति, खेलमैदान, र स्थानको चरित्र।",
-      step1Title: "प्रवेश",
-      step1Body: "पहिलो दृश्य सूचनाभन्दा पहिले वातावरण र उपस्थिति दिनु पर्छ।",
-      step2Title: "लय",
-      step2Body: "सभा, कक्षा, कार्यक्रम, खेलकुद र सामुदायिक काम एउटै जीवित प्रणालीझैँ देखिनुपर्छ।",
-      step3Title: "स्मृति",
-      step3Body: "तस्बिरहरू साधारण ग्यालरी होइन, अर्थपूर्ण र मिलाएर राखिएको संग्रहजस्तो हुनुपर्छ।",
-      quote: "पहाडमा जरा। उद्देश्यसहित अगाडि।",
-      quoteMeta: "पहिलो चरणको दृश्य दिशा"
+      eyebrow: "हाम्रो विद्यालय",
+      title: "जहाँ पढाइ, संस्कृति र समुदाय एकसाथ अघि बढ्छन्।",
+      lead: "लामाहट्टाका पहाडहरूबीच रहेको यो विद्यालयले अनुशासन, सिर्जनशीलता, सहभागिता र अपनत्वलाई सँगै अघि बढाउँछ।",
+      step1Title: "सुरुवातको स्थान",
+      step1Body: "हरेक विद्यालय दिवस साझा उद्देश्य, आत्मीय क्याम्पस र विद्यार्थीलाई एकसाथ ल्याउने वातावरणबाट सुरु हुन्छ।",
+      step2Title: "सिकाइ र सहभागिता",
+      step2Body: "कक्षा, सभा, कार्यक्रम, खेलकुद र सेवा गतिविधिले विद्यार्थीलाई आत्मविश्वास र जिम्मेवारीसाथ अघि बढ्न मद्दत गर्छ।",
+      step3Title: "बसिरहने सम्झना",
+      step3Body: "विद्यालयका कार्यक्रमदेखि दैनिक क्षणहरूसम्म, यी सम्झनाहरूले लामाहट्टा हाई स्कूलको भावना बोकेका छन्।",
+      quote: "पहाडमा जरा। उद्देश्यसहित वृद्धि।",
+      quoteMeta: "लामाहट्टा हाई स्कूल"
     },
     spotlight: {
       eyebrow: "विद्यार्थी जीवन",
-      title: "क्याम्पस जीवनलाई अझ सजग ढङ्गले प्रस्तुत गर्ने।",
-      lead: "सामान्य सामग्री ब्लकको सट्टा, गृहपृष्ठले विद्यालयलाई अनुभूतिका क्षणहरूबाट देखाउँछ।",
-      item1Title: "सभा र उपस्थिति",
-      item1Body: "प्रवेश, हलसभा र समारोहले विवरणभन्दा पहिले पहिचान बनाउँछन्।",
+      title: "विद्यालय जीवनको अझ पूर्ण झलक।",
+      lead: "सभा, सांस्कृतिक कार्यक्रम, खेलकुद र सामुदायिक कार्यमार्फत लामाहट्टा हाई स्कूलको विद्यार्थी जीवन सक्रिय, अनुशासित र जोडिएको छ।",
+      item1Title: "सभा र उपस्थिती",
+      item1Body: "सभा र विद्यालयका जमघटहरूले विद्यार्थीलाई साझा उद्देश्य र अनुशासनमा बाँध्छन्।",
       item2Title: "प्रदर्शन र संस्कृति",
-      item2Body: "स्टेज र सांस्कृतिक पोशाकले दृश्यमा न्यानोपन र गहिराइ दिन्छ।",
-      item3Title: "खेल र गति",
-      item3Body: "फुटबल, भलिबल, लङ जम्प र खेलकुद दिवसले ऊर्जा र आत्मविश्वास दिन्छ।",
-      ctaTitle: "अर्को चरण: स्मृति भित्तो",
-      ctaBody: "ग्यालरी अब फिल्टर, क्याप्सन र राम्रो लाइटबक्ससहित क्याम्पस क्षणहरूको संग्रह हुन्छ।",
+      item2Body: "सांस्कृतिक कार्यक्रम र प्रस्तुतिहरूले विद्यार्थीलाई प्रतिभा, आत्मविश्वास र परम्परा व्यक्त गर्ने ठाउँ दिन्छन्।",
+      item3Title: "खेलकुद र सहकार्य",
+      item3Body: "खेलकुद र बाहिरी गतिविधिले वर्षभरि ऊर्जा, सहकार्य र आत्मविश्वास बढाउँछन्।",
+      ctaTitle: "ग्यालरी हेर्नुहोस्",
+      ctaBody: "क्याम्पस जीवन, विद्यालय कार्यक्रम, खेलकुद र सामुदायिक गतिविधिका थप झलकहरू हेर्नुहोस्।",
       ctaButton: "ग्यालरी खोल्नुहोस्"
     },
     memory: {
-      eyebrow: "स्मृति भित्तो पूर्वावलोकन",
-      title: "वास्तविक तस्बिर, राम्रो संरचना, अझ बढी वातावरण।",
-      lead: "गृहपृष्ठको पूर्वावलोकन अब साधारण स्ट्रिप होइन, अझ राम्रो ग्यालरीतर्फ जान्छ।"
+      eyebrow: "ग्यालरी झलक",
+      title: "क्याम्पस जीवनका क्षणहरू।",
+      lead: "विद्यालय समुदायलाई आकार दिने दृश्य, कार्यक्रम र दैनिक क्षणहरूको एउटा झलक।"
     },
     footer: {
       heading: "लामाहट्टा हाई स्कूल",
-      copy: "स्थान, विद्यार्थी जीवन र दृश्य स्मृतिमा आधारित, विद्यालयका लागि अझ शान्त र बलियो डिजिटल उपस्थिति।",
+      copy: "सिकाइ, संस्कृति, अनुशासन र साझा प्रगतिमा आधारित विद्यालय समुदाय।",
       links: "लिङ्कहरू",
       contact: "सम्पर्क"
     },
     galleryPage: {
-      eyebrow: "स्मृति भित्तो",
-      title: "क्याम्पस जीवन, संस्कृति, खेलकुद र दैनिक वातावरण।",
-      lead: "नाम दिइएका विद्यालयका तस्बिरहरूबाट बनेको, सजिलै अन्वेषण गर्न मिल्ने संग्रह।"
+      eyebrow: "ग्यालरी",
+      title: "क्याम्पस जीवन, संस्कृति, खेलकुद र दैनिक क्षणहरू।",
+      lead: "लामाहट्टा हाई स्कूलका विद्यालय जीवन, कार्यक्रम, खेलकुद र सामुदायिक गतिविधिका तस्बिरहरू हेर्नुहोस्।"
     }
   }
 };
