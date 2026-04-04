@@ -1,0 +1,316 @@
+.top-bar {
+  position: relative;
+  z-index: 30;
+  padding: 0.75rem 0;
+  color: var(--text-soft);
+  background: rgba(16, 21, 24, 0.88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-bar .container,
+.site-header .container,
+.footer-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.top-meta,
+.contact-info,
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.top-meta {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.meta-divider {
+  width: 1px;
+  height: 0.9rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lang-toggle button {
+  padding: 0.35rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-pill);
+  color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.03);
+  transition: var(--transition);
+}
+
+.lang-toggle button.active,
+.lang-toggle button:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+.contact-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 1rem 0;
+  background: rgba(248, 246, 241, 0.72);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(16, 21, 24, 0.08);
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-frame {
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  background:
+    linear-gradient(145deg, rgba(163, 49, 45, 0.78), rgba(255, 255, 255, 0.92));
+  box-shadow: 0 14px 30px rgba(77, 26, 25, 0.18);
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.brand-copy {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.school-name {
+  font-size: clamp(1.45rem, 1.6vw, 1.85rem);
+  color: var(--maroon-900);
+}
+
+.school-name-sub {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.menu-toggle {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 50%;
+  color: var(--maroon-900);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.menu-toggle .menu-line {
+  width: 1rem;
+  height: 2px;
+  margin: 0.16rem auto;
+  background: currentColor;
+  transition: var(--transition);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  position: relative;
+  padding-bottom: 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--slate-800);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--silver-500), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding: var(--spacing-3xl) 0 2rem;
+  color: rgba(255, 255, 255, 0.78);
+  background:
+    radial-gradient(circle at top left, rgba(163, 49, 45, 0.16), transparent 24%),
+    linear-gradient(180deg, #121619 0%, #0a0d0f 100%);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.02) 30%, transparent 60%);
+  pointer-events: none;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.25rem;
+}
+
+.footer-brand {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-brand .school-name,
+.footer-heading {
+  color: var(--white);
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-copy,
+.footer-links,
+.footer-contact {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.footer-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: var(--silver-300);
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social a {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--white);
+}
+
+.footer-meta {
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .site-header .container {
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+  .main-nav {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: calc(100% + 0.75rem);
+    display: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(16, 21, 24, 0.08);
+    background: rgba(255, 252, 245, 0.96);
+    box-shadow: var(--shadow-md);
+  }
+
+  .main-nav.is-open {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .top-bar .container,
+  .footer-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    flex-wrap: wrap;
+  }
+
+  .brand-lockup {
+    max-width: calc(100% - 4rem);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

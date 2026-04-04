@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Wall | Lamahatta High School</title>
+  <meta
+    name="description"
+    content="A curated memory wall of Lamahatta High School, organized around campus life, culture, sports, and community."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+</head>
+<body class="page-shell">
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-meta">
+        <span data-i18n="topBar.location">Lamahatta, Darjeeling</span>
+        <span class="meta-divider"></span>
+        <span data-i18n="topBar.affiliation">Government Sponsored Higher Secondary</span>
+      </div>
+      <div class="contact-info">
+        <div class="lang-toggle">
+          <button class="switch-lang active" data-lang="en" type="button">EN</button>
+          <button class="switch-lang" data-lang="ne" type="button">नेपाली</button>
+        </div>
+        <a href="tel:+916294604102">
+          <i data-lucide="phone" width="16"></i>
+          <span data-i18n="topBar.phone">+91 62946 04102</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="brand-lockup">
+        <div class="logo-frame">
+          <img src="/assets/logo/school-crest-banner.jpg" alt="Lamahatta High School crest" class="logo-image" />
+        </div>
+        <div class="brand-copy">
+          <h1 class="school-name" data-i18n="nav.title">Lamahatta High School</h1>
+          <p class="school-name-sub" data-i18n="nav.subtitle">Higher Secondary • Estd. 1964</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="./" data-i18n="nav.home">Home</a></li>
+          <li><a href="./index.html#campus-story" data-i18n="nav.story">Campus Story</a></li>
+          <li><a href="./index.html#student-life" data-i18n="nav.life">Student Life</a></li>
+          <li><a href="./gallery.html" class="active" data-i18n="nav.gallery">Memory Wall</a></li>
+        </ul>
+        <a href="mailto:info@lamahattahss.edu.in" class="btn btn-secondary" data-i18n="nav.cta">Write to School</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <div class="container">
+        <div class="page-hero-shell">
+          <span class="eyebrow" data-i18n="galleryPage.eyebrow">Memory Wall</span>
+          <h2 class="display-title" data-i18n="galleryPage.title">
+            Campus life, culture, sports, and everyday atmosphere.
+          </h2>
+          <p class="section-lead" data-i18n="galleryPage.lead">
+            A curated collection built from renamed school photos and grouped into moments that feel easier to explore.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="gallery-shell">
+          <div class="gallery-toolbar" data-animate>
+            <div id="galleryFilters" class="chip-row" aria-label="Gallery filters"></div>
+            <div class="gallery-count" id="galleryCount">0 moments</div>
+          </div>
+
+          <div id="galleryGrid" class="gallery-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2 class="school-name" data-i18n="footer.heading">Lamahatta High School</h2>
+          <p data-i18n="footer.copy">
+            A calmer, stronger digital presence for the school, built around place, student life, and visual memory.
+          </p>
+          <div class="footer-social">
+            <a href="mailto:info@lamahattahss.edu.in" aria-label="Send email">
+              <i data-lucide="mail" width="18"></i>
+            </a>
+            <a href="tel:+916294604102" aria-label="Call school">
+              <i data-lucide="phone" width="18"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-copy">
+          <h3 class="footer-heading" data-i18n="footer.links">Navigate</h3>
+          <ul class="footer-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="./index.html#campus-story">Campus Story</a></li>
+            <li><a href="./index.html#student-life">Student Life</a></li>
+            <li><a href="./gallery.html">Memory Wall</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3 class="footer-heading" data-i18n="footer.contact">Contact</h3>
+          <p>Upper Lamahatta Busty, P.O. Lamahatta, Darjeeling, 734213</p>
+          <p><a href="mailto:info@lamahattahss.edu.in">info@lamahattahss.edu.in</a></p>
+          <p><a href="tel:+916294604102">+91 62946 04102</a></p>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <span>&copy; 2026 Lamahatta High School</span>
+        <span>UDISE: 19013001402</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-dialog">
+      <div class="lightbox-actions">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">
+          <i data-lucide="x" width="20"></i>
+        </button>
+      </div>
+      <div class="lightbox-frame">
+        <img id="lightboxImage" src="" alt="" />
+      </div>
+      <div class="lightbox-meta">
+        <div>
+          <h3 class="gallery-title" id="lightboxTitle"></h3>
+          <p class="gallery-caption" id="lightboxCaption"></p>
+        </div>
+        <div class="lightbox-actions">
+          <button class="lightbox-nav" id="lightboxPrevious" type="button" aria-label="Previous image">
+            <i data-lucide="arrow-left" width="20"></i>
+          </button>
+          <button class="lightbox-nav" id="lightboxNext" type="button" aria-label="Next image">
+            <i data-lucide="arrow-right" width="20"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/gallery-page.js"></script>
+</body>
+</html>

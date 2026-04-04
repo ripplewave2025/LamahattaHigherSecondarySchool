@@ -1,0 +1,208 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  padding: 2.5rem 0 7rem;
+  overflow: clip;
+  color: var(--white);
+  background:
+    radial-gradient(circle at top, rgba(161, 168, 179, 0.18), transparent 26%),
+    linear-gradient(180deg, #090d0f 0%, #11181c 34%, #23110f 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(110deg, rgba(9, 13, 15, 0.88) 6%, rgba(9, 13, 15, 0.46) 52%, rgba(9, 13, 15, 0.86) 100%);
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.18), transparent 32%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='1'%3E%3Cpath d='M0 90h180'/%3E%3Cpath d='M90 0v180'/%3E%3C/g%3E%3C/svg%3E");
+  mix-blend-mode: screen;
+  opacity: 0.42;
+  z-index: 1;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-media-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.08);
+}
+
+.hero-media-layer.is-active {
+  opacity: 1;
+}
+
+.hero-media-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.95) contrast(1.03);
+}
+
+.hero-mist,
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero-mist {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.16), transparent 18%),
+    radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.12), transparent 16%),
+    radial-gradient(circle at 45% 74%, rgba(161, 168, 179, 0.12), transparent 20%);
+  filter: blur(14px);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.62fr);
+  gap: 2rem;
+  align-items: end;
+  min-height: calc(100svh - 10rem);
+}
+
+.hero-copy {
+  display: grid;
+  gap: 1.35rem;
+  align-self: center;
+}
+
+.hero-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-kicker .chip {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.hero-title {
+  max-width: 10.5ch;
+  font-size: clamp(4.2rem, 10vw, 8rem);
+  line-height: 0.9;
+  text-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-desc {
+  max-width: 52ch;
+  font-size: 1.12rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.hero-note {
+  max-width: 48ch;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.hero-panel {
+  display: grid;
+  gap: 1rem;
+  padding: 1.1rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.hero-panel-card {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1.2rem;
+  border-radius: calc(var(--radius-lg) - 0.35rem);
+  background: rgba(10, 13, 15, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-panel-label {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.hero-panel-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+}
+
+.hero-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-scroll::before {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.page-hero {
+  padding: 5rem 0 3rem;
+}
+
+.page-hero .display-title {
+  max-width: 11ch;
+}
+
+.page-hero-shell {
+  display: grid;
+  gap: 1.4rem;
+}
+
+@media (max-width: 960px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 4rem 0 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding-bottom: 4.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 16vw, 5rem);
+  }
+}
