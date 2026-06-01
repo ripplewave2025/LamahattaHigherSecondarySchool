@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig(({ command }) => ({
-  base: command === 'serve' ? '/' : '/LamahattaHigherSecondarySchool/',
+  // Use '/' on Vercel or during local dev, fall back to subpath for GitHub Pages
+  base: process.env.VERCEL || command === 'serve' ? '/' : '/LamahattaHigherSecondarySchool/',
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        gallery: resolve(__dirname, 'gallery.html')
+        main: 'index.html',
+        gallery: 'gallery.html'
       }
     }
   }
