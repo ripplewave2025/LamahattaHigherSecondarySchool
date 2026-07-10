@@ -58,7 +58,7 @@ function renderGrid(container) {
     .map(
       (item, index) => `
         <article class="gallery-item${item.featured ? " featured" : ""}">
-          <img src="${item.image}" alt="${item.title}" loading="lazy" />
+          <img src="${item.image}" alt="${item.title}" width="800" height="600" loading="lazy" />
           <button type="button" data-gallery-index="${index}">
             <span class="gallery-kicker">${item.category}</span>
             <h3 class="gallery-title">${item.title}</h3>
@@ -103,6 +103,8 @@ function openLightbox(index) {
   state.activeIndex = index;
   image.src = item.image;
   image.alt = item.title;
+  image.width = 800;
+  image.height = 600;
   title.textContent = item.title;
   caption.textContent = item.caption;
   lightbox.classList.add("is-open");

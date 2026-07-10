@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Admin area is intentionally private
+Disallow: /admin.html
+
+Sitemap: https://lamahattahighschool.in/sitemap.xml

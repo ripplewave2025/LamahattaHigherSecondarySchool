@@ -4,26 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>document.documentElement.classList.add("js");</script>
-  <title>Gallery | Lamahatta Higher Secondary School</title>
+  <title>Notices | Lamahatta Higher Secondary School</title>
   <meta
     name="description"
-    content="Browse photographs from campus life, culture, sports, and everyday school activities at Lamahatta Higher Secondary School."
+    content="Official notices, examination routines, and announcements from Lamahatta Higher Secondary School, Darjeeling."
   />
   <!-- Favicon using school crest -->
   <link rel="icon" href="/assets/logo/school-crest-banner.jpg" type="image/jpeg" />
   <link rel="apple-touch-icon" href="/assets/logo/school-crest-banner.jpg" />
   <link rel="manifest" href="/site.webmanifest" />
   <!-- Open Graph / Twitter for elite institutional sharing -->
-  <meta property="og:title" content="Gallery | Lamahatta Higher Secondary School" />
-  <meta property="og:description" content="Browse photographs from campus life, culture, sports, and everyday school activities at Lamahatta Higher Secondary School." />
-  <meta property="og:image" content="/Photos/students/groupphoto.jpg" />
-  <meta property="og:url" content="/gallery.html" />
+  <meta property="og:title" content="Notices | Lamahatta Higher Secondary School" />
+  <meta property="og:description" content="Official notices, examination routines, and announcements from Lamahatta Higher Secondary School, Darjeeling." />
+  <meta property="og:image" content="/Photos/programs/assemblyinhall.jpg" />
+  <meta property="og:url" content="/notices.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Lamahatta Higher Secondary School" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gallery | Lamahatta Higher Secondary School" />
-  <meta name="twitter:description" content="Browse photographs from campus life, culture, sports, and everyday school activities at Lamahatta Higher Secondary School." />
-  <meta name="twitter:image" content="/Photos/students/groupphoto.jpg" />
+  <meta name="twitter:title" content="Notices | Lamahatta Higher Secondary School" />
+  <meta name="twitter:description" content="Official notices, examination routines, and announcements from Lamahatta Higher Secondary School, Darjeeling." />
+  <meta name="twitter:image" content="/Photos/programs/assemblyinhall.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="./css/layout.css" />
   <link rel="stylesheet" href="./css/components.css" />
   <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/pages.css" />
   <!-- JSON-LD Structured Data for EducationalOrganization -->
   <script type="application/ld+json">
   {
@@ -43,7 +44,7 @@
     "alternateName": "लामाहट्टा उच्च माध्यमिक विद्यालय",
     "url": "https://lamahattahighschool.in",
     "logo": "/assets/logo/school-crest-banner.jpg",
-    "image": "/Photos/students/groupphoto.jpg",
+    "image": "/Photos/programs/assemblyinhall.jpg",
     "description": "A government co-educational higher secondary school in the Darjeeling hills, established in 1964, serving Classes V–XII with WBBSE and WBCHSE curricula through learning, culture, sports, and community.",
     "address": {
       "@type": "PostalAddress",
@@ -87,7 +88,7 @@
 
   <header class="site-header">
     <div class="container">
-      <a href="./" class="brand-lockup">
+      <a href="./index.html" class="brand-lockup">
         <div class="logo-frame">
           <img src="/assets/logo/school-crest-banner.jpg" alt="Lamahatta Higher Secondary School crest" class="logo-image" width="72" height="72" />
         </div>
@@ -110,8 +111,8 @@
           <li><a href="./headmaster.html" data-i18n="nav.hm">HM's Message</a></li>
           <li><a href="./academics.html" data-i18n="nav.academics">Academics</a></li>
           <li><a href="./faculty.html" data-i18n="nav.faculty">Faculty</a></li>
-          <li><a href="./notices.html" data-i18n="nav.notices">Notices</a></li>
-          <li><a href="./gallery.html" class="active" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="./notices.html" class="active" data-i18n="nav.notices">Notices</a></li>
+          <li><a href="./gallery.html" data-i18n="nav.gallery">Gallery</a></li>
           <li><a href="./alumni.html" data-i18n="nav.alumni">Alumni</a></li>
         </ul>
         <a href="mailto:headmaster@lamahattahighschool.in" class="btn btn-secondary" data-i18n="nav.cta">Write to School</a>
@@ -123,26 +124,51 @@
     <section class="section page-hero">
       <div class="container">
         <div class="page-hero-shell">
-          <span class="eyebrow" data-i18n="galleryPage.eyebrow">Gallery</span>
-          <h1 class="display-title" data-i18n="galleryPage.title">
-            Campus life, culture, sports, and everyday moments.
-          </h1>
-          <p class="section-lead" data-i18n="galleryPage.lead">
-            Browse photographs from school life, programs, sports, and community activities at Lamahatta Higher Secondary School.
+          <span class="eyebrow" data-i18n="noticesPage.eyebrow">Notice Board</span>
+          <h1 class="display-title" data-i18n="noticesPage.title">Academic Circulars &amp; Announcements</h1>
+          <p class="section-lead lead-narrow" data-i18n="noticesPage.lead">
+            Stay updated with official school schedules, exam routines, and calendar updates.
           </p>
         </div>
       </div>
     </section>
 
     <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="gallery-shell">
-          <div class="gallery-toolbar" data-animate>
-            <div id="galleryFilters" class="chip-row" aria-label="Gallery filters"></div>
-            <div class="gallery-count" id="galleryCount">0 moments</div>
-          </div>
+      <div class="container stack-lg">
+        <div class="note-panel" id="noticesNote" data-animate>
+          <p data-i18n="noticesPage.note">Official PDF attachments are being uploaded. For immediate copies, please contact the school office.</p>
+        </div>
 
-          <div id="galleryGrid" class="gallery-grid"></div>
+        <div class="notice-list" id="noticeList">
+          <article class="notice-card glass-panel" data-animate>
+            <span class="notice-icon"><i data-lucide="megaphone" width="22"></i></span>
+            <div class="notice-body">
+              <p class="notice-date" data-i18n="noticesPage.n1Date">Published: June 1, 2026</p>
+              <h3 data-i18n="noticesPage.n1Title">Higher Secondary Admission Notice 2026</h3>
+              <p data-i18n="noticesPage.n1Body">Applications are open for admission to Class XI Arts stream. Collect forms from the school office.</p>
+            </div>
+            <a class="btn btn-secondary" href="#" data-i18n="noticesPage.downloadBtn">Download PDF</a>
+          </article>
+
+          <article class="notice-card glass-panel" data-animate>
+            <span class="notice-icon"><i data-lucide="calendar-days" width="22"></i></span>
+            <div class="notice-body">
+              <p class="notice-date" data-i18n="noticesPage.n2Date">Published: May 28, 2026</p>
+              <h3 data-i18n="noticesPage.n2Title">Half-Yearly Examination Routine 2026</h3>
+              <p data-i18n="noticesPage.n2Body">The exam routine for Class V to XII is now available. Click below to download the official schedule.</p>
+            </div>
+            <a class="btn btn-secondary" href="#" data-i18n="noticesPage.downloadBtn">Download PDF</a>
+          </article>
+
+          <article class="notice-card glass-panel" data-animate>
+            <span class="notice-icon"><i data-lucide="trophy" width="22"></i></span>
+            <div class="notice-body">
+              <p class="notice-date" data-i18n="noticesPage.n3Date">Published: May 20, 2026</p>
+              <h3 data-i18n="noticesPage.n3Title">Annual School Sports Meet &amp; Calendar</h3>
+              <p data-i18n="noticesPage.n3Body">Details regarding the annual track-and-field meet schedule, event categories, and registrations.</p>
+            </div>
+            <a class="btn btn-secondary" href="#" data-i18n="noticesPage.downloadBtn">Download PDF</a>
+          </article>
         </div>
       </div>
     </section>
@@ -199,34 +225,7 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox-dialog">
-      <div class="lightbox-actions">
-        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">
-          <i data-lucide="x" width="20"></i>
-        </button>
-      </div>
-      <div class="lightbox-frame">
-        <img id="lightboxImage" src="" alt="" width="800" height="600" />
-      </div>
-      <div class="lightbox-meta">
-        <div>
-          <h3 class="gallery-title" id="lightboxTitle"></h3>
-          <p class="gallery-caption" id="lightboxCaption"></p>
-        </div>
-        <div class="lightbox-actions">
-          <button class="lightbox-nav" id="lightboxPrevious" type="button" aria-label="Previous image">
-            <i data-lucide="arrow-left" width="20"></i>
-          </button>
-          <button class="lightbox-nav" id="lightboxNext" type="button" aria-label="Next image">
-            <i data-lucide="arrow-right" width="20"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script type="module" src="./js/main.js"></script>
-  <script type="module" src="./js/gallery-page.js"></script>
+  <script type="module" src="./js/notices-page.js"></script>
 </body>
 </html>

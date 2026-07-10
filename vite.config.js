@@ -7,7 +7,16 @@ export default defineConfig(({ command }) => ({
     rollupOptions: {
       input: {
         main: 'index.html',
-        gallery: 'gallery.html'
+        about: 'about.html',
+        headmaster: 'headmaster.html',
+        academics: 'academics.html',
+        admissions: 'admissions.html',
+        faculty: 'faculty.html',
+        notices: 'notices.html',
+        gallery: 'gallery.html',
+        alumni: 'alumni.html',
+        contact: 'contact.html',
+        admin: 'admin.html'
       }
     }
   }

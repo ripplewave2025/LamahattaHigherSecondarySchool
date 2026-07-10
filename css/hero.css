@@ -9,20 +9,26 @@
     linear-gradient(180deg, #090d0f 0%, #11181c 34%, #23110f 100%);
 }
 
+/* Top scrim — keeps the translucent sticky header legible over bright slides */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: transparent;
   z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(8, 6, 6, 0.55), transparent 20%);
 }
 
+/* Main legibility scrim + cinematic vignette — makes white text readable on ANY slide */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: transparent;
   z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(6, 5, 5, 0.30) 0%, rgba(6, 5, 5, 0.34) 42%, rgba(6, 5, 5, 0.66) 100%),
+    radial-gradient(120% 92% at 50% 45%, transparent 34%, rgba(6, 5, 5, 0.48) 100%);
 }
 
 .hero-media {
@@ -45,23 +51,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.95) contrast(1.03);
-}
-
-.hero-mist,
-.hero-particles {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.hero-mist {
-  background:
-    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.16), transparent 18%),
-    radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.12), transparent 16%),
-    radial-gradient(circle at 45% 74%, rgba(161, 168, 179, 0.12), transparent 20%);
-  filter: blur(14px);
+  filter: saturate(1.02) contrast(1.02) brightness(0.95);
 }
 
 .hero .container {
@@ -83,7 +73,7 @@
   justify-items: center;
   text-align: center;
   align-self: center;
-  max-width: 800px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -91,32 +81,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 0.65rem;
 }
 
+/* Maroon (school red) chips read crisply against the dark scrim */
 .hero-kicker .chip {
   color: var(--white);
   background: linear-gradient(135deg, var(--maroon-700), var(--maroon-600));
   border-color: transparent;
-  box-shadow: 0 6px 16px rgba(163, 49, 45, 0.22);
+  box-shadow: 0 6px 18px rgba(15, 10, 10, 0.35);
 }
 
+/* Real hero heading: small institutional eyebrow + large display tagline */
 .hero-title {
-  max-width: 18ch;
-  font-size: clamp(2.5rem, 6.5vw, 4.8rem);
-  line-height: 1.1;
-  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+  max-width: 20ch;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: clamp(0.72rem, 1.1vw, 0.92rem);
+  font-weight: 800;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.84);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6vw, 5.2rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
 }
 
 .hero-desc {
-  max-width: 52ch;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--maroon-900);
-  text-shadow: 
-    0 1px 8px rgba(255, 255, 255, 0.95), 
-    0 2px 16px rgba(255, 255, 255, 0.9), 
-    0 4px 24px rgba(255, 255, 255, 0.85);
+  max-width: 56ch;
+  font-size: clamp(1.02rem, 1.25vw, 1.18rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.55);
 }
 
 .hero-actions {
@@ -126,72 +134,17 @@
   gap: 0.9rem;
 }
 
-.hero-note {
-  max-width: 48ch;
-  color: var(--maroon-800);
-  font-size: 0.98rem;
-  font-weight: 600;
-  text-shadow: 
-    0 1px 6px rgba(255, 255, 255, 0.95), 
-    0 2px 12px rgba(255, 255, 255, 0.9);
-}
-
-.hero-panel {
-  display: grid;
-  gap: 1rem;
-  padding: 1.1rem;
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(18px);
-}
-
-.hero-panel-card {
-  display: grid;
-  gap: 0.65rem;
-  padding: 1.2rem;
-  border-radius: calc(var(--radius-lg) - 0.35rem);
-  background: rgba(10, 13, 15, 0.38);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.hero-panel-label {
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.68);
-}
-
-.hero-panel-value {
-  font-family: var(--font-display);
-  font-size: 2rem;
-}
-
 .hero-scroll {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  margin-top: 0.6rem;
-  color: var(--maroon-800);
+  margin-top: 0.4rem;
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.9);
-}
-
-.hero .btn-ghost {
-  color: var(--maroon-800);
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(127, 37, 34, 0.28);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
-}
-
-.hero .btn-ghost:hover {
-  background: rgba(255, 255, 255, 0.92);
-  border-color: var(--maroon-700);
-  color: var(--maroon-900);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
 }
 
 .hero-scroll::before {
@@ -201,25 +154,41 @@
   background: currentColor;
 }
 
+/* Glass ghost button reads as white on the dark hero */
+.hero .btn-ghost {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: none;
+  backdrop-filter: blur(6px);
+}
+
+.hero .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.20);
+  border-color: var(--white);
+  color: var(--white);
+}
+
+/* Inner-page hero (gallery, about, etc.) */
 .page-hero {
   padding: 5rem 0 3rem;
 }
 
 .page-hero .display-title {
-  max-width: 11ch;
+  max-width: 13ch;
 }
 
 .page-hero-shell {
   display: grid;
   gap: 1.4rem;
+  justify-items: center;
+  text-align: center;
 }
 
 @media (max-width: 960px) {
   .hero-layout {
-    grid-template-columns: 1fr;
     min-height: auto;
     padding: 3rem 0 0;
-    gap: 2.5rem;
   }
 }
 
@@ -228,15 +197,18 @@
     padding-bottom: 3.5rem;
   }
 
+  .hero-headline {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
   .hero-title {
-    font-size: clamp(2rem, 9vw, 2.75rem);
+    max-width: 100%;
   }
+}
 
-  .hero-panel-value {
-    font-size: clamp(1.4rem, 6vw, 1.8rem);
-  }
-
-  .hero-panel-card {
-    padding: 0.95rem;
+/* Respect users who prefer less motion: hold the active slide still */
+@media (prefers-reduced-motion: reduce) {
+  .hero-media-layer {
+    transform: none;
   }
 }

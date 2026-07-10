@@ -4,26 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>document.documentElement.classList.add("js");</script>
-  <title>Gallery | Lamahatta Higher Secondary School</title>
+  <title>Alumni | Lamahatta Higher Secondary School</title>
   <meta
     name="description"
-    content="Browse photographs from campus life, culture, sports, and everyday school activities at Lamahatta Higher Secondary School."
+    content="The alumni network of Lamahatta Higher Secondary School — reconnect, mentor current students, and help shape the future of the school in the Darjeeling hills."
   />
   <!-- Favicon using school crest -->
   <link rel="icon" href="/assets/logo/school-crest-banner.jpg" type="image/jpeg" />
   <link rel="apple-touch-icon" href="/assets/logo/school-crest-banner.jpg" />
-  <link rel="manifest" href="/site.webmanifest" />
   <!-- Open Graph / Twitter for elite institutional sharing -->
-  <meta property="og:title" content="Gallery | Lamahatta Higher Secondary School" />
-  <meta property="og:description" content="Browse photographs from campus life, culture, sports, and everyday school activities at Lamahatta Higher Secondary School." />
-  <meta property="og:image" content="/Photos/students/groupphoto.jpg" />
-  <meta property="og:url" content="/gallery.html" />
+  <meta property="og:title" content="Alumni | Lamahatta Higher Secondary School" />
+  <meta property="og:description" content="The alumni network of Lamahatta Higher Secondary School — reconnect, mentor current students, and help shape the future of the school in the Darjeeling hills." />
+  <meta property="og:image" content="/Photos/students/outdoorgroupphoto.jpg" />
+  <meta property="og:url" content="/alumni.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Lamahatta Higher Secondary School" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gallery | Lamahatta Higher Secondary School" />
-  <meta name="twitter:description" content="Browse photographs from campus life, culture, sports, and everyday school activities at Lamahatta Higher Secondary School." />
-  <meta name="twitter:image" content="/Photos/students/groupphoto.jpg" />
+  <meta name="twitter:title" content="Alumni | Lamahatta Higher Secondary School" />
+  <meta name="twitter:description" content="The alumni network of Lamahatta Higher Secondary School — reconnect, mentor current students, and help shape the future of the school in the Darjeeling hills." />
+  <meta name="twitter:image" content="/Photos/students/outdoorgroupphoto.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -34,6 +33,7 @@
   <link rel="stylesheet" href="./css/layout.css" />
   <link rel="stylesheet" href="./css/components.css" />
   <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/pages.css" />
   <!-- JSON-LD Structured Data for EducationalOrganization -->
   <script type="application/ld+json">
   {
@@ -43,7 +43,7 @@
     "alternateName": "लामाहट्टा उच्च माध्यमिक विद्यालय",
     "url": "https://lamahattahighschool.in",
     "logo": "/assets/logo/school-crest-banner.jpg",
-    "image": "/Photos/students/groupphoto.jpg",
+    "image": "/Photos/students/outdoorgroupphoto.jpg",
     "description": "A government co-educational higher secondary school in the Darjeeling hills, established in 1964, serving Classes V–XII with WBBSE and WBCHSE curricula through learning, culture, sports, and community.",
     "address": {
       "@type": "PostalAddress",
@@ -87,7 +87,7 @@
 
   <header class="site-header">
     <div class="container">
-      <a href="./" class="brand-lockup">
+      <a href="./index.html" class="brand-lockup">
         <div class="logo-frame">
           <img src="/assets/logo/school-crest-banner.jpg" alt="Lamahatta Higher Secondary School crest" class="logo-image" width="72" height="72" />
         </div>
@@ -111,8 +111,8 @@
           <li><a href="./academics.html" data-i18n="nav.academics">Academics</a></li>
           <li><a href="./faculty.html" data-i18n="nav.faculty">Faculty</a></li>
           <li><a href="./notices.html" data-i18n="nav.notices">Notices</a></li>
-          <li><a href="./gallery.html" class="active" data-i18n="nav.gallery">Gallery</a></li>
-          <li><a href="./alumni.html" data-i18n="nav.alumni">Alumni</a></li>
+          <li><a href="./gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="./alumni.html" class="active" data-i18n="nav.alumni">Alumni</a></li>
         </ul>
         <a href="mailto:headmaster@lamahattahighschool.in" class="btn btn-secondary" data-i18n="nav.cta">Write to School</a>
       </nav>
@@ -123,12 +123,10 @@
     <section class="section page-hero">
       <div class="container">
         <div class="page-hero-shell">
-          <span class="eyebrow" data-i18n="galleryPage.eyebrow">Gallery</span>
-          <h1 class="display-title" data-i18n="galleryPage.title">
-            Campus life, culture, sports, and everyday moments.
-          </h1>
-          <p class="section-lead" data-i18n="galleryPage.lead">
-            Browse photographs from school life, programs, sports, and community activities at Lamahatta Higher Secondary School.
+          <span class="eyebrow" data-i18n="alumniPage.eyebrow">Alumni</span>
+          <h1 class="display-title" data-i18n="alumniPage.title">Once of these hills, always part of this school</h1>
+          <p class="section-lead lead-narrow" data-i18n="alumniPage.lead">
+            For six decades, students have left Lamahatta carrying its discipline and warmth into the wider world. The alumni network keeps that bond alive.
           </p>
         </div>
       </div>
@@ -136,13 +134,61 @@
 
     <section class="section" style="padding-top: 0;">
       <div class="container">
-        <div class="gallery-shell">
-          <div class="gallery-toolbar" data-animate>
-            <div id="galleryFilters" class="chip-row" aria-label="Gallery filters"></div>
-            <div class="gallery-count" id="galleryCount">0 moments</div>
+        <div class="split-grid">
+          <div class="stack-lg" data-animate>
+            <h2 class="display-title" data-i18n="alumniPage.legacyTitle">A legacy that travels far</h2>
+            <p class="section-lead" data-i18n="alumniPage.legacyBody">
+              From the hills of Darjeeling, former students have gone on to serve as teachers, officers, professionals, and community leaders across the region and beyond. Their journeys are the clearest measure of what this school builds.
+            </p>
           </div>
+          <div class="media-frame" data-animate>
+            <img src="/Photos/students/outdoorgroupphoto.jpg" alt="A group of Lamahatta students gathered outdoors" width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div id="galleryGrid" class="gallery-grid"></div>
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading" data-animate>
+          <span class="eyebrow" data-i18n="alumniPage.registerTitle">Join the alumni network</span>
+          <h2 class="display-title" data-i18n="alumniPage.giveTitle">Ways alumni give back</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card glass-panel" data-animate style="padding: 1.8rem;">
+            <span class="feature-icon"><i data-lucide="compass" width="22"></i></span>
+            <h3 data-i18n="alumniPage.give1Title">Mentorship</h3>
+            <p data-i18n="alumniPage.give1Body">Guide current students on studies, careers, and life beyond the hills.</p>
+          </article>
+          <article class="feature-card glass-panel" data-animate style="padding: 1.8rem;">
+            <span class="feature-icon"><i data-lucide="mic" width="22"></i></span>
+            <h3 data-i18n="alumniPage.give2Title">Talks &amp; Visits</h3>
+            <p data-i18n="alumniPage.give2Body">Return to campus to share your journey at assemblies and school events.</p>
+          </article>
+          <article class="feature-card glass-panel" data-animate style="padding: 1.8rem;">
+            <span class="feature-icon"><i data-lucide="heart-handshake" width="22"></i></span>
+            <h3 data-i18n="alumniPage.give3Title">Support</h3>
+            <p data-i18n="alumniPage.give3Body">Contribute to scholarships, facilities, and student opportunities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container stack-lg">
+        <article class="cta-panel glass-panel" data-animate>
+          <h2 data-i18n="alumniPage.registerTitle">Join the alumni network</h2>
+          <p data-i18n="alumniPage.registerBody">
+            Are you a former student of Lamahatta Higher Secondary School? Reconnect with the school, mentor current students, and help shape what comes next.
+          </p>
+          <div>
+            <a href="mailto:headmaster@lamahattahighschool.in?subject=Alumni%20Registration" class="btn btn-secondary" data-i18n="alumniPage.registerCta">Register as alumni</a>
+          </div>
+        </article>
+
+        <div class="note-panel" data-animate>
+          <h3 data-i18n="alumniPage.noteTitle">The alumni register is being compiled</h3>
+          <p data-i18n="alumniPage.noteBody">If you studied here, write to the school office so we can add you to the official register and share reunion news.</p>
         </div>
       </div>
     </section>
@@ -199,34 +245,6 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox-dialog">
-      <div class="lightbox-actions">
-        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">
-          <i data-lucide="x" width="20"></i>
-        </button>
-      </div>
-      <div class="lightbox-frame">
-        <img id="lightboxImage" src="" alt="" width="800" height="600" />
-      </div>
-      <div class="lightbox-meta">
-        <div>
-          <h3 class="gallery-title" id="lightboxTitle"></h3>
-          <p class="gallery-caption" id="lightboxCaption"></p>
-        </div>
-        <div class="lightbox-actions">
-          <button class="lightbox-nav" id="lightboxPrevious" type="button" aria-label="Previous image">
-            <i data-lucide="arrow-left" width="20"></i>
-          </button>
-          <button class="lightbox-nav" id="lightboxNext" type="button" aria-label="Next image">
-            <i data-lucide="arrow-right" width="20"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script type="module" src="./js/main.js"></script>
-  <script type="module" src="./js/gallery-page.js"></script>
 </body>
 </html>

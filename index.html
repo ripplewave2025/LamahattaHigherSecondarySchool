@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lamahatta High School | Darjeeling</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <title>Lamahatta Higher Secondary School | Darjeeling Hills</title>
   <meta
     name="description"
-    content="Lamahatta High School in Darjeeling: a school community shaped by learning, culture, sports, and everyday campus life."
+    content="Lamahatta Higher Secondary School, Darjeeling — government co-educational higher secondary school (Classes V–XII) serving the hills since 1964 through learning, culture, sports, and community."
   />
+  <!-- Favicon using school crest -->
+  <link rel="icon" href="/assets/logo/school-crest-banner.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="/assets/logo/school-crest-banner.jpg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- Open Graph / Twitter for elite institutional sharing -->
+  <meta property="og:title" content="Lamahatta Higher Secondary School | Darjeeling Hills" />
+  <meta property="og:description" content="Lamahatta Higher Secondary School, Darjeeling — government co-educational higher secondary school (Classes V–XII) serving the hills since 1964 through learning, culture, sports, and community." />
+  <meta property="og:image" content="/Photos/ground.png" />
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lamahatta Higher Secondary School" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lamahatta Higher Secondary School | Darjeeling Hills" />
+  <meta name="twitter:description" content="Lamahatta Higher Secondary School, Darjeeling — government co-educational higher secondary school (Classes V–XII) serving the hills since 1964 through learning, culture, sports, and community." />
+  <meta name="twitter:image" content="/Photos/ground.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -18,8 +34,37 @@
   <link rel="stylesheet" href="./css/layout.css" />
   <link rel="stylesheet" href="./css/components.css" />
   <link rel="stylesheet" href="./css/hero.css" />
+  <!-- JSON-LD Structured Data for EducationalOrganization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "School",
+    "name": "Lamahatta Higher Secondary School",
+    "alternateName": "लामाहट्टा उच्च माध्यमिक विद्यालय",
+    "url": "https://lamahattahighschool.in",
+    "logo": "/assets/logo/school-crest-banner.jpg",
+    "image": "/Photos/ground.png",
+    "description": "A government co-educational higher secondary school in the Darjeeling hills, established in 1964, serving Classes V–XII with WBBSE and WBCHSE curricula through learning, culture, sports, and community.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Upper Lamahatta Busty",
+      "addressLocality": "P.O. Lamahatta",
+      "addressRegion": "Darjeeling, West Bengal",
+      "postalCode": "734213",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91 62946 04102",
+    "email": "headmaster@lamahattahighschool.in",
+    "foundingDate": "1964",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Government Sponsored Higher Secondary"
+    }
+  }
+  </script>
 </head>
 <body class="page-shell">
+  <noscript><p style="margin:0;padding:0.5rem 1rem;background:#fffbeb;color:#854d0e;text-align:center;font-size:0.85rem;border-bottom:1px solid #fde68a;">This site works best with JavaScript for language switching, animations and the dynamic notices list.</p></noscript>
   <div class="top-bar">
     <div class="container">
       <div class="top-meta">
@@ -44,10 +89,10 @@
     <div class="container">
       <a href="./" class="brand-lockup">
         <div class="logo-frame">
-          <img src="/assets/logo/school-crest-banner.jpg" alt="Lamahatta High School crest" class="logo-image" />
+          <img src="/assets/logo/school-crest-banner.jpg" alt="Lamahatta Higher Secondary School crest" class="logo-image" width="72" height="72" />
         </div>
         <div class="brand-copy">
-          <h1 class="school-name" data-i18n="nav.title">Lamahatta High School</h1>
+          <p class="school-name" data-i18n="nav.title">Lamahatta Higher Secondary School</p>
           <p class="school-name-sub" data-i18n="nav.subtitle">Higher Secondary | Estd. 1964</p>
         </div>
       </a>
@@ -61,14 +106,13 @@
       <nav class="main-nav" aria-label="Primary navigation">
         <ul class="nav-links">
           <li><a href="./index.html" class="active" data-i18n="nav.home">Home</a></li>
-          <li><a href="./about.html" data-i18n="nav.about">About Profile</a></li>
+          <li><a href="./about.html" data-i18n="nav.about">About</a></li>
           <li><a href="./headmaster.html" data-i18n="nav.hm">HM's Message</a></li>
           <li><a href="./academics.html" data-i18n="nav.academics">Academics</a></li>
-          <li><a href="./admissions.html" data-i18n="nav.admissions">Admissions</a></li>
           <li><a href="./faculty.html" data-i18n="nav.faculty">Faculty</a></li>
           <li><a href="./notices.html" data-i18n="nav.notices">Notices</a></li>
           <li><a href="./gallery.html" data-i18n="nav.gallery">Gallery</a></li>
-          <li><a href="./contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          <li><a href="./alumni.html" data-i18n="nav.alumni">Alumni</a></li>
         </ul>
         <a href="mailto:headmaster@lamahattahighschool.in" class="btn btn-secondary" data-i18n="nav.cta">Write to School</a>
       </nav>
@@ -79,38 +123,38 @@
     <section class="hero">
       <div class="hero-media" aria-hidden="true">
         <div class="hero-media-layer is-active">
-          <img src="/Photos/ground.png" alt="Lamahatta High School Ground" />
+          <img src="/Photos/ground.png" alt="" width="1920" height="1080" loading="eager" fetchpriority="high" />
         </div>
         <div class="hero-media-layer">
-          <img src="/Photos/programs/assemblyinhall.jpg" alt="Assembly in school hall" />
+          <img src="/Photos/programs/assemblyinhall.jpg" alt="" width="1920" height="1080" />
         </div>
         <div class="hero-media-layer">
-          <img src="/Photos/programs/fairscience.jpg" alt="Lamahatta science fair" />
+          <img src="/Photos/programs/fairscience.jpg" alt="" width="1920" height="1080" />
         </div>
         <div class="hero-media-layer">
-          <img src="/Photos/programs/meetinginhall.jpg" alt="Parent-teacher meeting in hall" />
+          <img src="/Photos/programs/meetinginhall.jpg" alt="" width="1920" height="1080" />
         </div>
       </div>
-      <div class="hero-mist"></div>
 
       <div class="container">
         <div class="hero-layout">
           <div class="hero-copy">
             <div class="hero-kicker">
-              <span class="chip" data-i18n="hero.chip1">Since 1964</span>
-              <span class="chip" data-i18n="hero.chip2">In the Hills</span>
-              <span class="chip" data-i18n="hero.chip3">Learning Together</span>
+              <span class="chip" data-i18n="hero.chip1">Estd. 1964</span>
+              <span class="chip" data-i18n="hero.chip2">Darjeeling Hills</span>
+              <span class="chip" data-i18n="hero.chip3">Govt. Co-educational</span>
             </div>
+            <h1 class="hero-title">
+              <span class="hero-eyebrow" data-i18n="hero.titleName">Lamahatta Higher Secondary School</span>
+              <span class="hero-headline" data-i18n="hero.tagline">Rooted in the hills.<br />Ready for the future.</span>
+            </h1>
             <p class="hero-desc" data-i18n="hero.desc">
-              Lamahatta High School brings together study, culture, sports, and community in a place where students learn with confidence and care.
+              Educating Classes V to XII in the hills of Darjeeling — with Arts at the Higher Secondary level, grounded in discipline, culture, and community.
             </p>
             <div class="hero-actions">
               <a href="./gallery.html" class="btn btn-primary" data-i18n="hero.btn1">Explore the Gallery</a>
               <a href="#student-life" class="btn btn-ghost" data-i18n="hero.btn2">See Student Life</a>
             </div>
-            <p class="hero-note" data-i18n="hero.note">
-              A glimpse of Lamahatta High School through its campus, students, and everyday life.
-            </p>
             <a href="#campus-story" class="hero-scroll" data-i18n="hero.scroll">Discover more</a>
           </div>
         </div>
@@ -176,14 +220,14 @@
                 <span class="story-index">03</span>
               </div>
               <p class="card-copy" data-i18n="story.step3Body">
-                From school programs to daily moments on the ground, these memories reflect the spirit of Lamahatta High School.
+                From school programs to daily moments on the ground, these memories reflect the spirit of Lamahatta Higher Secondary School.
               </p>
             </article>
           </div>
 
           <aside class="quote-card glass-panel" data-animate>
             <blockquote data-i18n="story.quote">Rooted in the hills. Growing with purpose.</blockquote>
-            <p class="quote-meta" data-i18n="story.quoteMeta">Lamahatta High School</p>
+            <p class="quote-meta" data-i18n="story.quoteMeta">Lamahatta Higher Secondary School</p>
           </aside>
         </div>
       </div>
@@ -201,7 +245,7 @@
 
         <div class="memory-grid">
           <a class="memory-tile memory-wide memory-tall" href="./gallery.html?filter=campus" data-animate>
-            <img src="/Photos/birdseyeviewofground.png" alt="Birdseye campus view" />
+            <img src="/Photos/birdseyeviewofground.png" alt="Birdseye campus view" width="800" height="600" loading="lazy" />
             <div class="memory-copy">
               <span class="memory-kicker">Campus</span>
               <h3 class="memory-title">Ground from above</h3>
@@ -209,7 +253,7 @@
             </div>
           </a>
           <a class="memory-tile memory-medium" href="./gallery.html?filter=culture" data-animate>
-            <img src="/Photos/culture/culturaldress.jpg" alt="Students in cultural dress" />
+            <img src="/Photos/culture/culturaldress.jpg" alt="Students in cultural dress" width="800" height="600" loading="lazy" />
             <div class="memory-copy">
               <span class="memory-kicker">Culture</span>
               <h3 class="memory-title">Ceremony and color</h3>
@@ -217,7 +261,7 @@
             </div>
           </a>
           <a class="memory-tile memory-medium" href="./gallery.html?filter=sports" data-animate>
-            <img src="/Photos/sports/sports.jpg" alt="Sports day activity" />
+            <img src="/Photos/sports/sports.jpg" alt="Sports day activity" width="800" height="600" loading="lazy" />
             <div class="memory-copy">
               <span class="memory-kicker">Sports</span>
               <h3 class="memory-title">Motion on the ground</h3>
@@ -225,7 +269,7 @@
             </div>
           </a>
           <a class="memory-tile memory-wide" href="./gallery.html?filter=service" data-animate>
-            <img src="/Photos/activities/outdoorcleanings.jpg" alt="Outdoor cleaning activity" />
+            <img src="/Photos/activities/outdoorcleanings.jpg" alt="Outdoor cleaning activity" width="800" height="600" loading="lazy" />
             <div class="memory-copy">
               <span class="memory-kicker">Community</span>
               <h3 class="memory-title">Shared responsibility</h3>
@@ -242,7 +286,7 @@
           <span class="eyebrow" data-i18n="spotlight.eyebrow">Student Life</span>
           <h2 class="display-title" data-i18n="spotlight.title">A fuller picture of school life.</h2>
           <p class="section-lead" data-i18n="spotlight.lead">
-            From assemblies and cultural programs to sports and community work, student life at Lamahatta High School is active, disciplined, and connected.
+            From assemblies and cultural programs to sports and community work, student life at Lamahatta Higher Secondary School is active, disciplined, and connected.
           </p>
         </div>
 
@@ -273,7 +317,7 @@
 
           <div class="story-stack">
             <div class="media-frame glass-panel" data-animate>
-              <img src="/Photos/programs/assemblyinhall.jpg" alt="Assembly in hall" />
+              <img src="/Photos/programs/assemblyinhall.jpg" alt="Assembly in hall" width="800" height="600" loading="lazy" />
             </div>
             <article class="cta-panel glass-panel" data-animate>
               <h3 data-i18n="spotlight.ctaTitle">Explore the gallery</h3>
@@ -294,7 +338,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2 class="school-name" data-i18n="footer.heading">Lamahatta Higher Secondary School</h2>
+          <p class="school-name" data-i18n="footer.heading">Lamahatta Higher Secondary School</p>
           <p data-i18n="footer.copy">
             A school community rooted in learning, culture, discipline, and shared progress.
           </p>
@@ -309,22 +353,23 @@
         </div>
 
         <div class="footer-copy">
-          <h3 class="footer-heading" data-i18n="footer.links">Navigate</h3>
+          <h2 class="footer-heading" data-i18n="footer.links">Navigate</h2>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Profile</a></li>
-            <li><a href="./headmaster.html">HM's Message</a></li>
-            <li><a href="./academics.html">Academics</a></li>
-            <li><a href="./admissions.html">Admissions</a></li>
-            <li><a href="./faculty.html">Faculty</a></li>
-            <li><a href="./notices.html">Notices</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="./headmaster.html" data-i18n="nav.hm">HM's Message</a></li>
+            <li><a href="./academics.html" data-i18n="nav.academics">Academics</a></li>
+            <li><a href="./admissions.html" data-i18n="nav.admissions">Admissions</a></li>
+            <li><a href="./faculty.html" data-i18n="nav.faculty">Faculty</a></li>
+            <li><a href="./notices.html" data-i18n="nav.notices">Notices</a></li>
+            <li><a href="./gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="./alumni.html" data-i18n="nav.alumni">Alumni</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-contact">
-          <h3 class="footer-heading" data-i18n="footer.contact">Contact</h3>
+          <h2 class="footer-heading" data-i18n="footer.contact">Contact</h2>
           <p>Upper Lamahatta Busty, P.O. Lamahatta, Darjeeling, 734213</p>
           <p><a href="mailto:headmaster@lamahattahighschool.in">headmaster@lamahattahighschool.in</a></p>
           <p><a href="tel:+916294604102">+91 62946 04102</a></p>
@@ -332,13 +377,14 @@
       </div>
 
       <div class="footer-meta">
-        <span>&copy; 2026 Lamahatta Higher Secondary School</span>
-        <span>UDISE: 19013001402</span>
+        <span>&copy; 2026 Lamahatta Higher Secondary School &middot; UDISE: 19013001402</span>
+        <span class="footer-credit">
+          <a href="https://portfolio-next-fawn-five.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="footer.builtBy">Built with care by an alumnus &#8599;</a>
+        </span>
       </div>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
   <script type="module" src="./js/main.js"></script>
 </body>
 </html>

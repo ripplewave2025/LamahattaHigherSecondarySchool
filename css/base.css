@@ -59,7 +59,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 body {
@@ -178,9 +178,22 @@ canvas {
   border: 0;
 }
 
-[data-animate] {
+/* Scroll-reveal: only hide elements when JS is available to reveal them.
+   Without JS (the .js class is never added) content stays fully visible. */
+.js [data-animate] {
   opacity: 0;
   transform: translateY(28px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js [data-animate] {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (max-width: 720px) {
