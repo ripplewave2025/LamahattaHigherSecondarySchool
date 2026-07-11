@@ -82,7 +82,8 @@ export const translations = {
       copy: "A school community rooted in learning, culture, discipline, and shared progress.",
       links: "Navigate",
       contact: "Contact",
-      builtBy: "Built with care by an alumnus &#8599;"
+      builtBy: "Built with care by an alumnus &#8599;",
+      community: "We help you · you help us — support community services &#8599;"
     },
     galleryPage: {
       eyebrow: "Gallery",
@@ -237,7 +238,11 @@ export const translations = {
       registerBody: "Are you a former student of Lamahatta Higher Secondary School? Reconnect with the school, mentor current students, and help shape what comes next.",
       registerCta: "Register as alumni",
       noteTitle: "The alumni register is being compiled",
-      noteBody: "If you studied here, write to the school office so we can add you to the official register and share reunion news."
+      noteBody: "If you studied here, write to the school office so we can add you to the official register and share reunion news.",
+      communityEyebrow: "Community",
+      communityTitle: "We help you. You help us.",
+      communityBody: "The same spirit that built this school website also supports local community work in and around Lamahatta. If this site or our tools have helped you, you can support us back by using our services and walking with the projects we are building.",
+      communityCta: "Visit bishwakarmasamaj.in &#8599;"
     }
   },
   ne: {
@@ -323,7 +328,8 @@ export const translations = {
       copy: "सिकाइ, संस्कृति, अनुशासन र साझा प्रगतिमा आधारित विद्यालय समुदाय।",
       links: "लिङ्कहरू",
       contact: "सम्पर्क",
-      builtBy: "एक पूर्व विद्यार्थीद्वारा मायाका साथ निर्मित &#8599;"
+      builtBy: "एक पूर्व विद्यार्थीद्वारा मायाका साथ निर्मित &#8599;",
+      community: "हामी तपाईंलाई सहयोग गर्छौं · तपाईं हामीलाई — सामुदायिक सेवा प्रयोग गर्नुहोस् &#8599;"
     },
     galleryPage: {
       eyebrow: "ग्यालरी",
@@ -478,7 +484,11 @@ export const translations = {
       registerBody: "के तपाईं लामाहट्टा उच्च माध्यमिक विद्यालयका पूर्व विद्यार्थी हुनुहुन्छ? विद्यालयसँग पुनः जोडिनुहोस् र अहिलेका विद्यार्थीहरूलाई मार्गदर्शन गर्नुहोस्।",
       registerCta: "पूर्व विद्यार्थीको रूपमा दर्ता गर्नुहोस्",
       noteTitle: "पूर्व विद्यार्थी अभिलेख तयार हुँदैछ",
-      noteBody: "यदि तपाईंले यहाँ अध्ययन गर्नुभएको हो भने, विद्यालय कार्यालयमा सम्पर्क गर्नुहोस् ताकि हामी तपाईंलाई आधिकारिक अभिलेखमा थप्न सकौं।"
+      noteBody: "यदि तपाईंले यहाँ अध्ययन गर्नुभएको हो भने, विद्यालय कार्यालयमा सम्पर्क गर्नुहोस् ताकि हामी तपाईंलाई आधिकारिक अभिलेखमा थप्न सकौं।",
+      communityEyebrow: "समुदाय",
+      communityTitle: "हामी तपाईंलाई सहयोग गर्छौं। तपाईं हामीलाई।",
+      communityBody: "जुन भावनाले यो विद्यालयको वेबसाइट बनायो, त्यही भावनाले लामाहट्टा वरपरको सामुदायिक कामलाई पनि साथ दिन्छ। यदि यो साइट वा हाम्रा औजारहरूले तपाईंलाई सहयोग गरेको छ भने, हाम्रा सेवा प्रयोग गरेर र हामीले बनाइरहेका परियोजनासँग हिँडेर तपाईं पनि सहयोग गर्न सक्नुहुन्छ।",
+      communityCta: "bishwakarmasamaj.in मा जानुहोस् &#8599;"
     }
   }
 };

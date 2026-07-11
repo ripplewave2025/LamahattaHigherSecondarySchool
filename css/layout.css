@@ -299,6 +299,35 @@
   font-size: 0.9rem;
 }
 
+.footer-credit {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: end;
+  text-align: right;
+}
+
+.footer-credit a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color var(--transition);
+}
+
+.footer-credit a:hover {
+  color: var(--silver-300);
+}
+
+.footer-credit .footer-community-link {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+}
+
+.footer-credit .footer-community-link:hover {
+  color: var(--white);
+}
+
 /*
   Collapse the full desktop nav early.
   Long bilingual labels + brand name overflow between ~960–1280px if we wait
@@ -415,6 +444,11 @@
   .footer-meta {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-credit {
+    justify-items: start;
+    text-align: left;
   }
 
   .contact-info {

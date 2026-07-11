@@ -4,18 +4,14 @@
     notices, contact, alumni). Builds on base/layout/components.
    ============================================================ */
 
-/* Footer build credit */
-.footer-credit a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.55);
-  transition: color var(--transition);
+/* Community reciprocity block (alumni page) */
+.community-bridge {
+  display: grid;
+  gap: 1rem;
 }
 
-.footer-credit a:hover {
-  color: var(--silver-300);
+.community-bridge .eyebrow {
+  margin-bottom: 0;
 }
 
 /* Calmer page-hero titles than the home display title */
